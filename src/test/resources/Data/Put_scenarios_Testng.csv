@@ -1,0 +1,52 @@
+requestType,endpoint,usersId,userAddress,street,plotNumber,state,country,zipCode,9,user_last_name,user_contact_number,user_email_id,expected_status_code,expected_status_line
+POST,createusers,,TRUE,Waldo Ave,10-a,Illinois,USA,61110,testpost,Navaaaaa,1133624982,775S3075A39520MQ2@gmail.com,201,OK
+POST,createusers,,TRUE,Waldo Ave,10-a,Illinois,USA,61110,testpost,Navaaaaa,8207038566,546R1088P98921GH1@gmail.com,201,OK
+PUT,updateuser,FALSE,TRUE,Main St,12-b,California,USA,90210,Navaaa,Smith,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,Waldo Ave,11-v,New York,USA,37128,Navaaa,test,1133624982,775S3075A39520MQ2@gmail.com,200,OK
+PUT,updateuser,null,FALSE, ,,,,,Navaaa,test,1133624982,775S3075A39520MQ2@gmail.com,200,OK
+PUT,updateuser,null,FALSE,,,,,,FALSE,FALSE,FALSE,FALSE,400,Bad Request
+PUT,updateuser,null,TRUE,Waldo Ave,11-v,New York,USA,37128,Navaaaw,test,1133624982,775S3075A39520MQ2@gmail.com,200,OK
+PUT,updateuser,null,TRUE,Waldo Ave,11-v,New York,USA,37128,Navaaaupdate,test,1133624982,775S3075A39520MQ2@gmail.com,200,OK
+PUT,updateuser,null,TRUE,Waldo Ave,11-v,New York,USA,37128,Navaaa131313!,test,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,Main St,12-b,California,USA,90210,FALSE,test,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,Main St,12-b,California,USA,90210,n,test,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,Main St,12-b,California,USA,90210,hdgahisgaishgfiadsgfigdsfiuguaidgfougsfdihugadsuyifgyisgfjdabfhjsdghifugdlufgdjwbfsiuFGIUSgdfhbdsfHGOIDUYSAGFLUGEWLFUGsoidugflihjdsGFJBHSDIUFGUWGEHFsgdlfiouhdsiOFGHLUIGDSFIGIDSgfigdsfugugfsdiufGUIDSGFUIGLIUDSgfuicalgsdiufgisafguidsgfiudgfsuigfiuagsduifgiuds,test,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,Waldo Ave,11-v,New York,USA,37128,Ge,test,1133624982,775S3075A39520MQ2@gmail.com,200,OK
+PUT,updateuser,null,TRUE,Main St,12-b,California,USA,90210,Ge,testupdate,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,Main St,12-b,California,USA,90210,Ge,testu@2pdate,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,Main St,12-b,California,USA,90210,Ge,FALSE,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,Main St,12-b,California,USA,90210,Ge,t,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,Main St,12-b,California,USA,90210,Ge,hdgahisgaishgfiadsgfigdsfiuguaidgfougsfdihugadsuyifgyisgfjdabfhjsdghifugdlufgdjwbfsiuFGIUSgdfhbdsfHGOIDUYSAGFLUGEWLFUGsoidugflihjdsGFJBHSDIUFGUWGEHFsgdlfiouhdsiOFGHLUIGDSFIGIDSgfigdsfugugfsdiufGUIDSGFUIGLIUDSgfuicalgsdiufgisafguidsgfiudgfsuigfiuagsduifgiuds,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,Main St,12-b,California,USA,90210,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,200,OK
+PUT,updateuser,null,TRUE,Main St,12-b,California,USA,90210,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,Main St,12-b,California,USA,90210,Ge,ta,a222@2222,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,Main St,12-b,California,USA,90210,Ge,ta,FALSE,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,Main St,12-b,California,USA,90210,Ge,ta,4.44E+11,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,Main St,12-b,California,USA,90210,Ge,ta,887,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,Main St,12-b,California,USA,90210,Ge,ta,8207038566,775S3075A39520MQ2@gmail.com,409,Bad Request
+PUT,updateuser,null,TRUE,Main St,12-b,California,USA,90210,Ge,ta,1133624982,501G1200H69137JX@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,Main St,12-b,California,USA,90210,Ge,ta,1133624982,!@,400,Bad Request
+PUT,updateuser,null,TRUE,Main St,12-b,California,USA,90210,Ge,ta,1133624982,FALSE,400,Bad Request
+PUT,updateuser,null,TRUE,Main St,12-b,California,USA,90210,Ge,ta,1133624982,546R1088P98921GH1@gmail.com,409,Bad Request
+PUT,updateuser,null,TRUE,Main Street update,12-b,California,USA,90210,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,!!,12-b,California,USA,90210,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,FALSE,12-b,California,USA,90210,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,a,12-b,California,USA,90210,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,hdgahisgaishgfiadsgfigdsfiuguaidgfougsfdihugadsuyifgyisgfjdabfhjsdghifugdlufgdjwbfsiuFGIUSgdfhbdsfHGOIDUYSAGFLUGEWLFUGsoidugflihjdsGFJBHSDIUFGUWGEHFsgdlfiouhdsiOFGHLUIGDSFIGIDSgfigdsfugugfsdiufGUIDSGFUIGLIUDSgfuicalgsdiufgisafguidsgfiudgfsuigfiuagsduifgiuds,12-b,California,USA,90210,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,aa,12-b,California,USA,90210,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,aa,16-c,California,USA,90210,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,200,OK
+PUT,updateuser,null,TRUE,aa,!!,California,USA,90210,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,aa,FALSE,California,USA,90210,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,aa,hdgahisgaishgfiadsgfigdsfiuguaidgfougsfdihugadsuyifgyisgfjdabfhjsdghifugdlufgdjwbfsiuFGIUSgdfhbdsfHGOIDUYSAGFLUGEWLFUGsoidugflihjdsGFJBHSDIUFGUWGEHFsgdlfiouhdsiOFGHLUIGDSFIGIDSgfigdsfugugfsdiufGUIDSGFUIGLIUDSgfuicalgsdiufgisafguidsgfiudgfsuigfiuagsduifgiuds,California,USA,90210,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,aa,16-c,Connecticut,USA,90210,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,200,OK
+PUT,updateuser,null,TRUE,aa,16-c,HGUYFUYFUU@!,USA,90210,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,aa,16-c,FALSE,USA,90210,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,aa,16-c,California,India,90210,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,200,OK
+PUT,updateuser,null,TRUE,aa,16-c,California,!@!123,90210,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,aa,16-c,California,FALSE,90210,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,aa,16-c,Connecticut,USA,37128,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,200,OK
+PUT,updateuser,null,TRUE,aa,16-c,Connecticut,USA,!@!,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,aa,16-c,Connecticut,USA,FALSE,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,aa,16-c,Connecticut,USA,5.45E+11,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+PUT,updateuser,null,TRUE,aa,16-c,Connecticut,USA,545,Ge,ta,1133624982,775S3075A39520MQ2@gmail.com,400,Bad Request
+DELETE,deleteuser,,TRUE,,,,,,,,,,,
